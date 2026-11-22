@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VN Smile Dental Clinic | Your Smile, Our Priority</title>
+<meta name="description" content="Welcome to VN Smile Dental Clinic. Explore dental care services and contact us for enquiries.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#173c3d;background:#f8fbf9;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:white;padding:17px 7%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 12px #0001}
+.logo{font-size:24px;font-weight:900;color:#075c5b}
+.logo span{color:#18a99c}
+nav{display:flex;gap:25px;font-size:14px;font-weight:bold}
+nav a:hover{color:#18a99c}
+.menu{display:none;border:0;background:none;font-size:26px}
+.hero{padding:85px 8%;background:linear-gradient(120deg,#e1f5ed,#f4fbf8);display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.tag{color:#10988c;font-weight:bold;letter-spacing:3px;font-size:12px}
+.hero h1{font-size:58px;line-height:1.13;color:#07504e;margin:20px 0}
+.hero h1 span{color:#19a99c}
+.hero p{color:#607b76;margin-bottom:22px}
+.hero img{width:100%;height:400px;object-fit:cover;border-radius:18px;box-shadow:0 15px 35px #164c3b22}
+.btn{display:inline-block;background:#087d75;color:white;padding:13px 23px;border-radius:7px;font-weight:bold;border:0;cursor:pointer;margin:5px 5px 5px 0}
+.btn:hover{background:#064e4b}
+.outline{background:transparent;color:#087d75;border:1px solid #087d75}
+section{padding:75px 8%}
+.heading{text-align:center;margin-bottom:38px}
+.heading h2{font-size:36px;color:#075c5b;margin:8px 0}
+.heading p{color:#71817e}
+.about{max-width:850px;text-align:center;margin:auto}
+.about p{color:#647a78}
+.services{background:#eaf5f1}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:white;padding:28px;border-radius:13px;box-shadow:0 7px 25px #00000009;transition:.25s}
+.card:hover{transform:translateY(-7px);box-shadow:0 12px 25px #00000012}
+.symbol{font-size:35px;color:#16a69a}
+.card h3{color:#075c5b;margin:9px 0}
+.card p{font-size:14px;color:#71817e}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.feature img{width:100%;height:360px;object-fit:cover;border-radius:15px}
+.feature h2{font-size:37px;color:#075c5b;margin:15px 0}
+.feature p{color:#71817e;margin-bottom:20px}
+.banner{text-align:center;background:#075c5b;color:white}
+.banner h2{font-size:36px}
+.banner p{margin:12px 0 20px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-info h3{font-size:24px;color:#075c5b}
+.contact-info p{margin:20px 0;color:#607b76}
+form{background:white;padding:28px;border-radius:13px;box-shadow:0 6px 25px #0001}
+form h3{color:#075c5b;margin-bottom:15px}
+label{display:block;font-weight:bold;font-size:13px;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #d6e3de;border-radius:7px;font:inherit;background:#fff}
+input:focus,textarea:focus,select:focus{outline:2px solid #20b6a4}
+.submit{width:100%;margin-top:18px;font-size:15px}
+footer{background:#073d3d;color:white;text-align:center;padding:35px}
+footer p{color:#c6dfd8;font-size:13px;margin-top:5px}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:57px;height:57px;border-radius:50%;background:#20bd6b;color:white;display:grid;place-items:center;font-size:27px;z-index:20;box-shadow:0 5px 15px #0003}
+@media(max-width:750px){
+ header{padding:15px 5%}
+ .menu{display:block}
+ nav{display:none;position:absolute;top:65px;left:0;width:100%;background:white;padding:20px;flex-direction:column;text-align:center;gap:18px}
+ nav.open{display:flex}
+ .hero,.feature,.contact-grid{grid-template-columns:1fr}
+ .hero{padding:55px 7%}
+ .hero h1{font-size:43px}
+ .hero img{height:270px}
+ section{padding:55px 7%}
+ .grid{grid-template-columns:1fr}
+ .heading h2,.feature h2,.banner h2{font-size:29px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">✦ VN<span>SMILE</span></div>
+<button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div>
+<div class="tag">WELCOME TO VN SMILE</div>
+<h1>Your Smile.<br><span>Our Priority.</span></h1>
+<p>Discover a welcoming dental experience designed around your needs. Every smile deserves thoughtful care and attention.</p>
+<a href="#contact" class="btn">Make an Enquiry ↗</a>
+<a href="#services" class="btn outline">Explore Services</a>
+</div>
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=85" alt="Modern dental clinic">
+</section>
+
+<section id="about">
+<div class="heading">
+<div class="tag">GET TO KNOW US</div>
+<h2>Welcome to VN Smile</h2>
+<p>A brighter approach to dental care.</p>
+</div>
+<div class="about">
+<p>At VN Smile Dental Clinic, we believe every smile deserves attention. Our goal is to help patients understand their dental care options and take the next step towards better oral health. Contact us to learn about our clinic and available treatments.</p>
+<br>
+<a href="#contact" class="btn">Get in Touch</a>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="heading">
+<div class="tag">WHAT WE OFFER</div>
+<h2>Our Dental Services</h2>
+<p>Explore these example services. Please confirm availability with the clinic.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="symbol">✦</div><h3>General Dentistry</h3><p>Enquire about general dental care and oral health assessments.</p></div>
+<div class="card"><div class="symbol">◈</div><h3>Teeth Whitening</h3><p>Ask about professional teeth whitening options.</p></div>
+<div class="card"><div class="symbol">⌁</div><h3>Dental Braces</h3><p>Explore orthodontic treatment and consultation options.</p></div>
+<div class="card"><div class="symbol">♡</div><h3>Dental Check-up</h3><p>Learn more about routine dental examinations.</p></div>
+<div class="card"><div class="symbol">✧</div><h3>Tooth Restoration</h3><p>Ask about available restorative dental treatments.</p></div>
+<div class="card"><div class="symbol">✺</div><h3>Oral Care</h3><p>Get information about maintaining healthy teeth and gums.</p></div>
+</div>
+</section>
+
+<section class="feature" id="why">
+<img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85" alt="Dental professional providing care">
+<div>
+<div class="tag">YOUR DENTAL JOURNEY</div>
+<h2>Every smile has a story.</h2>
+<p>Taking care of your oral health starts with understanding your needs. Contact the clinic to ask questions, learn about treatment options and enquire about appointments.</p>
+<a href="#contact" class="btn">Contact Our Clinic ↗</a>
+</div>
+</section>
+
+<section class="banner">
+<h2>Ready to care for your smile?</h2>
+<p>Your journey towards a healthier smile starts with an enquiry.</p>
+<a href="#contact" class="btn" style="background:white;color:#075c5b">Enquire Now ↗</a>
+</section>
+
+<section id="contact">
+<div class="heading">
+<div class="tag">LET'S CONNECT</div>
+<h2>Contact VN Smile</h2>
+<p>We would love to hear from you.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-info">
+<h3>VN Smile Dental Clinic</h3>
+<p>📍 <b>Address</b><br>Update with the clinic's verified address.</p>
+<p>📞 <b>Phone / WhatsApp</b><br>Update with the clinic's verified number.</p>
+<p>🕒 <b>Opening Hours</b><br>Contact the clinic to confirm current hours.</p>
+<a class="btn" id="map" href="#" target="_blank">Find Us on Google Maps ↗</a>
+</div>
+
+<form id="form">
+<h3>Send Us an Enquiry</h3>
+<label for="name">Your Name</label>
+<input id="name" required placeholder="Enter your name">
+<label for="phone">Phone Number</label>
+<input id="phone" type="tel" required placeholder="Enter your phone number">
+<label for="service">Service Interested In</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>General Dentistry</option>
+<option>Teeth Whitening</option>
+<option>Dental Braces</option>
+<option>Dental Check-up</option>
+<option>Tooth Restoration</option>
+<option>Other Enquiry</option>
+</select>
+<label for="message">Your Message</label>
+<textarea id="message" rows="4" placeholder="Write your enquiry here"></textarea>
+<button class="btn submit" type="submit">Send via WhatsApp ↗</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<h2>✦ VN SMILE</h2>
+<p>Your Smile. Our Priority.</p>
+<p>© <span id="year"></span> VN Smile Dental Clinic. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" id="wa" href="#" aria-label="WhatsApp">☏</a>
+
+<script>
+// CHANGE THESE PLACEHOLDERS BEFORE PUBLISHING
+const WHATSAPP_NUMBER = "60123456789";
+const CLINIC_ADDRESS = "VN Smile Dental Clinic, Malaysia";
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+menu.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  menu.textContent = nav.classList.contains("open") ? "✕" : "☰";
+});
+
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menu.textContent = "☰";
+  });
+});
+
+const whatsappURL = "https://wa.me/" + WHATSAPP_NUMBER;
+
+document.getElementById("wa").href = whatsappURL;
+
+document.getElementById("map").href =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent(CLINIC_ADDRESS);
+
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+
+  const text =
+    "Hello VN Smile Dental Clinic!%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Message: " + encodeURIComponent(message);
+
+  window.open(whatsappURL + "?text=" + text, "_blank");
+});
+</script>
+
+</body>
+  </html>
+  
